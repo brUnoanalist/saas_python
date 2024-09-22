@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block head_title %}
+
+{{ page_title }}- {{ block.super }}
+    
+{% endblock head_title %}
+
+{% block content %}
+
+<p>{{ page_title }}</p>
+
+{% include 'snippets/welcome-user-msg.html' %}
+<p>
+Numero de visitas: {{  page_visit_count }}</p>
+<p>Visitas Totales: {{ total_visit_count }}</p>
+
+
+{% endblock content %}
+
