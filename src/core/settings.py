@@ -22,7 +22,8 @@ ALLOWED_HOSTS = [
 if DEBUG:
     ALLOWED_HOSTS += [
         "localhost",
-        "127.0.0.1"
+        "127.0.0.1",
+        ".railway.app"
     ]
     
     
